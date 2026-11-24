@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:residential_group/app.dart';
 import 'package:residential_group/domain/models/user_role.dart';
-import 'package:residential_group/ui/features/overview/subfeatures/meetings/views/meetings_screen.dart';
-import 'package:residential_group/ui/features/overview/views/overview_tab.dart';
+import 'package:residential_group/ui/features/overview/pages/overview_tab.dart';
+import 'package:residential_group/ui/features/overview/subfeatures/meetings/pages/meetings_screen.dart';
 
 void main() {
   Future<void> pumpApp(
@@ -27,7 +27,7 @@ void main() {
 
   Future<void> navigateToTab(WidgetTester tester, String label) async {
     final destination = find.descendant(
-      of: find.byType(NavigationBar),
+      of: find.byKey(const ValueKey('floating_bottom_nav')),
       matching: find.text(label),
     );
     await tester.tap(destination);
