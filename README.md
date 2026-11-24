@@ -1,6 +1,6 @@
 # Quản lý Dân cư Xã (`residential_group`)
 
-Ứng dụng di động Flutter phục vụ công tác quản lý dân cư của một xã (dữ liệu mẫu tại **Xã Tân Lập**), hỗ trợ phân cấp tài khoản rõ ràng giữa ban điều hành xã/thôn và cư dân.
+Ứng dụng di động Flutter phục vụ công tác quản lý dân cư của một xã, hỗ trợ phân cấp tài khoản rõ ràng giữa ban điều hành xã/thôn và cư dân.
 
 ---
 
